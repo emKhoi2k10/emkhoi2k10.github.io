@@ -16,6 +16,7 @@ Mình 2k10 và đang trải qua những năm tháng thanh xuân tại [**THPT L�
 - [youtube](https://www.youtube.com/@Dreom)
 - [picoctf](https://play.picoctf.org/users/mazuong)
 - [rootme](https://www.root-me.org/emKhoi2k10)
+- [dreamhack](https://dreamhack.io/users/88267)
 
 > "không có đường nào khó, chỉ có chân ngại lối xa."
 >
