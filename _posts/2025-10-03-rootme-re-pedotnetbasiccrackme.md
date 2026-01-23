@@ -231,11 +231,3 @@ Console.ReadLine();
 ### III. Đôi lời gửi đến người đọc
 ---
 * Vâng, vậy là hết post, cảm ơn những người ae đã đọc hết đến đây. Chúc những người ae ăn Trung Thu vui vẻ và hạnh phúc.
-
-> Banh Trung Thu dau xanh is da best
->
-> emKhoi2k10
-
-<p align="center">
-  <img src="/images/rootmerevch46/mid-autumn-day-mid-autumn-fall.gif" width="500"/>
-</p>
