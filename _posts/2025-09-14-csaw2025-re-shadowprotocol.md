@@ -199,13 +199,7 @@ printf("[SPACE] A cosmic signal has been scrambled using the Shadow Protocol at 
 ```
 msg <-- v11 <-- v10 <-- v9 <-- v3,rand() <-- srand() <-- seed
 ```
-* Vậy chỉ cần có seed là ta decrypt được msg mà seed thì `shadow_protocol` đã cung cấp cho chúng ta. bắn.
-
-> [Post-Chorus: Edward Maya]
->
-> I can fix all those lies
->
-> Oh, baby, babe, I run, love, I'm running to you
+* Vậy chỉ cần có seed là ta decrypt được msg mà seed thì `shadow_protocol` đã cung cấp cho chúng ta.
 
 * Công đoạn đi viết script và decrypt
 * Mình sẽ connect tới server lại để lấy seed và encrypted msg để bắt đầu decrypt.
