@@ -15,3 +15,6 @@ Social:
 - [rootme](https://www.root-me.org/emKhoi2k10)
 - [dreamhack](https://dreamhack.io/users/88267)
 - [discord](https://discordapp.com/users/1398506037769801788)
+
+
+fuck microsoft edge, go suck some cocks dumbfuck microsoft, and also fuck your stupidass office365 nigger
