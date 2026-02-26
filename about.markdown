@@ -16,9 +16,3 @@ Social:
 - [dreamhack](https://dreamhack.io/users/88267)
 - [discord](https://discordapp.com/users/1398506037769801788)
 
-
-fuck microsoft edge, go suck some cocks dumbfuck microsoft, and also fuck your stupidass office365 nigger
-
-<p align="center">
-  <img src="/images/microsoft-be-like-fuck-microsoft.gif" width="450"/>
-</p>
