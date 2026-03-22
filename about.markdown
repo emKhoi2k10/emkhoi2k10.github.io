@@ -4,9 +4,7 @@ title: About
 permalink: /about/
 ---
 
-<p align="center">
-  <img src="/images/dream-job.jpg" width=50%"/>
-</p>
+<img src="/images/dream-job.jpg" style="width:50%;">
 
 Mình là ***Nguyễn Đức Nguyên Khôi***. Mình chơi **reverse engineering** và là thành viên team [**V1t**](https://ctftime.org/team/280950).
 Mình viết blog này chủ yếu là về các write-up CTF.
