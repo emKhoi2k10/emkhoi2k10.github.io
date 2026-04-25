@@ -213,12 +213,7 @@ Console.ReadLine();
 <p align="center">
   <img src="/images/rootmerevch46/procexp.JPG" width="1000"/>
 </p>
-* Damnn, 2-stage loader, y như tên của nó :)), `xorStub`.
-* Stub là một từ được sử dụng rất nhiều trong các dịch vụ Crypter ví dụ như là `"100% FUD stub"`. Thì giải thích đơn giản stub sẽ là một chương trình dùng để decrypt payload và chạy payload. Và tùy vào sẽ thích của người viết, stub có thể hoạt động theo nhiều cách đa dạng khác nhau, nó có thể là 2-stage loader, 3-stage loader, chạy trong ram, tạo file trong Temp(trường hợp chúng ta đang gặp) rồi chạy, ...
-* Trên thực tế, các dịch vụ Crypter có rất nhiều các kĩ thuật khác nhau để xáo chương trình gốc để tạo một FUD(Fully Undetechable) stub. Và các dịch vụ Crypter lừng danh nhất hiện nay phần lớn đến từ các tác giả người Nga và U Cà :).
-* Dưới đây là một ví dụ mà bạn có thể đọc thêm nếu tò mò: 
-  [Demystifying the Crypter Used in Emotet, Qbot, and Dridex](https://www.zscaler.com/blogs/security-research/demystifying-crypter-used-emotet-qbot-and-dridex)
-* Quay lại với chall, mình đã load cái payload cuối cùng sau khi đã được xor decrypt lên dnSpy. (Tempmmkstrd22n.exe)
+* Mình đã load cái payload cuối cùng sau khi đã được xor decrypt lên dnSpy. (Tempmmkstrd22n.exe)
 <p align="center">
   <img src="/images/rootmerevch46/DnSpy-real-payload.jpg" width="1000"/>
 </p>
