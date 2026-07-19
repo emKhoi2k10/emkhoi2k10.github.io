@@ -226,7 +226,7 @@ Cơ chế loader khá đơn giản là nó sẽ tận dụng schedule task của
 Mình đã test thử cho SystemBC load thử một file exe, thì file exe này chỉ đơn giản là tạo một window với dòng chứ "hello v1t".
 [![schedule task run](/assets/images/systembc/schedule-task-run.png)](/assets/images/systembc/schedule-task-run.png)
 
-Thì khi nhìn vào thông tin của task dùng để chạy payload, có dòng là: `delete or end the task immediately / 0 seconds after it expires` . Tức là sau khi task thực hiện xong thì task sẽ được xóa khỏi schedule. Tức có nghĩa là chỉ chạy payload đúng một lần duy nhất.
+Thì khi nhìn vào thông tin của task dùng để chạy payload, có dòng là: `Delete Task If Not Rescheduled: PT0S` . Tức là sau khi task thực hiện xong thì task sẽ được xóa khỏi schedule. Tức có nghĩa là chỉ chạy payload đúng một lần duy nhất.
 
 ### 4. Fun facts về SystemBC và psevdo
 ---
