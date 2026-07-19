@@ -242,4 +242,4 @@ Từ năm 2024 trở đi thì psevdo đã cải tiến và tiếp tục bán Sys
 
 Mình chân thành cảm ơn những người đã đọc hết bài post này. Vì đây là bài post đầu tiên về malware nên cách viết và giải thích có thể gây khó hiểu. Mình sẽ cố gắng viết dễ hiểu và giải thích hay hơn ở các bài post về malware sau.
 
-Cảm ơn anh [Rawr](https://rawr.v1t.site/) vì domain v1t.site, cảm ơn anh [Nanasi](https://nanasi.v1t.site/).
+Cảm ơn anh [Rawr](https://rawr.v1t.site/) vì domain v1t.site.
