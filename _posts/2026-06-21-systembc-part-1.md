@@ -175,7 +175,7 @@ Sau khi được RC4 crypt, những thông tin cơ bản này sẽ được gử
 
 Sau khi thu thập thông tin cơ bản của máy nạn nhân, implant(client) sẽ liên tục đợi lệnh từ C2 để thực hiện 1 trong 2 chức năng chính sau: Loader, SOCKS5 proxy.
 
-Implant và C2 sẽ giao tiếp qua giao thức TCP + SOCKS5, và tất cả gói tin sẽ được encrypt bằng RC4. Thì giờ mình sẽ giải thích 1 chút về 2 giao thức này. Mặc dù cả hai đều được gọi là giao thức nhưng mà nó khác nhau ở chỗ là TCP là giao thức ở mức độ thấp hơn. Trong [OSI model](https://en.wikipedia.org/wiki/OSI_model), thì TCP thuộc Transport layer còn SOCKS thuộc Session layer. Tức là SOCKS5 sẽ tận dụng giao thức TCP.
+Implant và C2 sẽ giao tiếp qua giao thức TCP và traffic được encrypt bằng RC4.
 
 Việc implant biết được khi nào thực hiện 1 trong 2 chức năng chính trên phụ thuộc vào 1 hoặc 2 byte data đầu tiên(sau khi được RC4 decrypt) trong gói tin mà nó nhận từ C2:
 - 0xFFFF: chức năng Loader
@@ -217,16 +217,17 @@ create_write_File((const CHAR *)(int)nSize, (const void *)v43[0], v42[0], 2, 0);
 ```
 [![write payload](/assets/images/systembc/write-payload.png)](/assets/images/systembc/write-payload.png)
 
-Cơ chế loader khá đơn giản là nó sẽ tận dụng schedule task của windows để chạy payload. Loader sẽ tạo một task trong schedule task để chạy payload. Thì việc này khá thông minh là vì lỡ payload bị AV/EDR flag thì không lần ra implant được tại payload được chạy bằng schedule task :). Mình không biết là cái trick schedule task này giờ còn dùng được không nhưng mà mình nghĩ ý đồ của tác giả ban đầu là vậy.
+Cơ chế loader khá đơn giản là nó sẽ tận dụng schedule task của windows để chạy payload. Loader sẽ tạo một task trong schedule task để chạy payload.
 
 [![schedule task code](/assets/images/systembc/schedule-task-code.png)](/assets/images/systembc/schedule-task-code.png)
 
 Đặc biệt, nếu file là .ps1 thì task sẽ có thêm option `-WindowStyle Hidden -ep bypass -file `
 
-Mình đã test thử cho SystemBC load thử một file exe, thì file exe này chỉ đơn giản là tạo một window với dòng chứ "hello v1t".
+Mình đã test thử cho SystemBC load thử một file exe, thì file exe này chỉ đơn giản là tạo một window với dòng chứ "hello v1t". Trong ảnh thì task chưa chạy vì implant có một số lỗi nên việc chạy payload không thành công, đa phần chắc là do implant bị outdated vì mình test trên máy win 11 bản mới. Nên mình debug để cho thấy được là task được tạo sẽ ra sao thôi. Còn tại sao task chưa chạy mà trong hình có "hello v1t" là do mình chạy bằng tay(click vô exe) :).
 [![schedule task run](/assets/images/systembc/schedule-task-run.png)](/assets/images/systembc/schedule-task-run.png)
 
-Thì khi nhìn vào thông tin của task dùng để chạy payload, có dòng là: `Delete Task If Not Rescheduled: PT0S` . Tức là sau khi task thực hiện xong thì task sẽ được xóa khỏi schedule. Tức có nghĩa là chỉ chạy payload đúng một lần duy nhất.
+
+Thì khi nhìn vào thông tin của task dùng để chạy payload, có dòng là: `Delete Task If Not Rescheduled: PT0S` . Tức là sau khi task đã hết hạn, task sẽ được xóa khỏi schedule.
 
 ### 4. Fun facts về SystemBC và psevdo
 ---
