@@ -35,9 +35,9 @@ author:
   location: "45.240872, 37.262438"
   # fediverse      : "@you@instance.social"  # used for fediverse:creator meta tag
   links:
-    - label: "emkhoi2k10@exploit.im"
+    - label: "lucky6789@jabber.club (OMEMO)"
       icon: "fa-brands fa-xmpp"
-      url: "xmpp:lucky6789@jabber.club (OMEMO)"
+      url: "xmpp:lucky6789@jabber.club"
 
 # Defaults
 defaults:
