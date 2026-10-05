@@ -82,7 +82,7 @@ Hàm `rundll()` chỉ đơn giản gọi tới hàm `sub_180001667()`. Thì hàm
 
 [![socks.dll main](/assets/images/systembc/socks-dll-main.png)](/assets/images/systembc/socks-dll-main.png)
 
-Còn socks.exe thì khác một chút là trước khi nó vào hàm `sub_180001667()`, socks.exe sẽ tạo một schedule task có tên là wow64. Thì task này là dùng đễ tự động chạy socks.exe khi máy tính bắt đầu.
+Còn socks.exe thì khác một chút là trước khi nó vào hàm `sub_180001667()`, socks.exe sẽ tạo một schedule task có tên là wow64. Thì task này là dùng để tự động chạy socks.exe khi máy tính bắt đầu.
 [![wow64](/assets/images/systembc/wow64.png)](/assets/images/systembc/wow64.png)
 
 
